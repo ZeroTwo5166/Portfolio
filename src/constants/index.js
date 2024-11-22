@@ -10,16 +10,12 @@ import {
   tailwind,
   nodejs,
   git,
-  robofriend,
-  starwars,
-  gameDatabase,
   threejs,
   tec,
   angular,
   mssql,
   cSharp,
   kali,
-  dcord
 } from "../assets";
 
 
@@ -172,7 +168,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: robofriend,
+    image: "https://utfs.io/f/OxxexRswuBkzXsRtcj5NbBSKJUoDytkA0FhTRXm2d5WMY7is",
     source_code_link: "https://github.com/ZeroTwo5166/robofriends",
     demo_link: "https://zerotwo5166.github.io/robofriends/"
   },
@@ -194,7 +190,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: starwars,
+    image: "https://utfs.io/f/OxxexRswuBkz9caA46Ngkyro3nchBWMSbTRdq9KAZzfVwQeD",
     source_code_link: "https://github.com/ZeroTwo5166/Starwars_api",
     demo_link: "https://zerotwo5166.github.io/Starwars_api/",
   },
@@ -216,7 +212,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: gameDatabase,
+    image: "https://utfs.io/f/OxxexRswuBkzPqDYWTec8qXHnKF0G7iO23RuT9vSosWQey4E",
     source_code_link: "https://github.com/ZeroTwo5166/ng_game_database",
     demo_link: "https://zerotwo5166.github.io/ng_game_database/"
   },
@@ -246,7 +242,7 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image: dcord,
+    image: "https://utfs.io/f/OxxexRswuBkz6BJYD7MNcqWwSFfrnuav1E9i2jxBTtJyAoPU",
     source_code_link: "https://github.com/ZeroTwo5166/DiscordClone",
     demo_link: "https://dcord.dryorc.com/"
   },

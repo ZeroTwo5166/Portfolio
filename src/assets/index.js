@@ -24,13 +24,9 @@ import angular from "./tech/angular.png";
 import mssql from "./tech/mssql.png";
 import cSharp from "./tech/cSharp.png";
 import kali from "./tech/kali.png";
-import dcord from "./dcord.JPG"
 
 import tec from "./company/tec.png"
 
-import robofriend from "./roboFriends.png";
-import starwars from "./starwars.png";
-import gameDatabase from "./gameDatabase.png";
 
 export {
   logo,
@@ -54,13 +50,10 @@ export {
   tailwind,
   typescript,
   threejs,
-  robofriend,
-  starwars,
-  gameDatabase,
   tec,
   angular,
   mssql,
   cSharp,
   kali,
-  dcord
+  
 };
