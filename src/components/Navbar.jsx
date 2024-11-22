@@ -11,7 +11,7 @@ const Navbar = ({ nyanStateToParent }) => {
   const [nyanClicked, setNyanClicked] = useState(false);
   const [showFilesDialog, setShowFilesDialog] = useState(false); // State to control the Files dialog box
   const [filesOpen, setFilesOpen] = useState(false);
-  
+
   const filesRef = useRef(null); // Create a ref to the Files dialog
 
   useEffect(() => {
@@ -45,9 +45,8 @@ const Navbar = ({ nyanStateToParent }) => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
-      }`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
+        }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <button
@@ -80,9 +79,8 @@ const Navbar = ({ nyanStateToParent }) => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${active === nav.title ? "text-white" : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => {
                 if (nav.title !== "Files") {
                   setActive(nav.title);
@@ -95,41 +93,41 @@ const Navbar = ({ nyanStateToParent }) => {
               <a href={`#${nav.id}`}>{nav.title}</a>
               {/* Show dialog box only when "Files" is clicked */}
               {nav.title === "Files" && showFilesDialog && (
-  <div
-    ref={filesRef} // Assign the ref to the dialog box
-    className="absolute bg-gray-900 text-white rounded-lg shadow-lg mt-2 w-[120px] h-[90px]"
-  >
-    <p
-      className="cursor-pointer hover:bg-gray-700 rounded transition-colors p-2"
-      onClick={() => {
-        const cvFileUrl = "/src/assets/CV English.pdf"; // Path to your CV file
-        const link = document.createElement("a");
-        link.href = cvFileUrl;
-        link.download = "CV_English.pdf"; // Suggested file name
-        document.body.appendChild(link);
-        link.click(); // Trigger download
-        document.body.removeChild(link); // Clean up
-      }}
-    >
-      CV
-    </p>
-    <div className="border-t border-gray-600"></div> {/* Separator */}
-    <p
-      className="cursor-pointer hover:bg-gray-700 rounded transition-colors p-2"
-      onClick={() => {
-        const applicationFileUrl = "/src/assets/Application.pdf"; // Path to your application file
-        const link = document.createElement("a");
-        link.href = applicationFileUrl;
-        link.download = "Application.pdf"; // Suggested file name
-        document.body.appendChild(link);
-        link.click(); // Trigger download
-        document.body.removeChild(link); // Clean up
-      }}
-    >
-      Application
-    </p>
-  </div>
-)}
+                <div
+                  ref={filesRef} // Assign the ref to the dialog box
+                  className="absolute bg-gray-900 text-white rounded-lg shadow-lg mt-2 w-[120px] h-[90px]"
+                >
+                  <p
+                    className="cursor-pointer hover:bg-gray-700 rounded transition-colors p-2"
+                    onClick={() => {
+                      const cvFileUrl = "/src/assets/CV English.pdf"; // Path to your CV file
+                      const link = document.createElement("a");
+                      link.href = cvFileUrl;
+                      link.download = "CV_English.pdf"; // Suggested file name
+                      document.body.appendChild(link);
+                      link.click(); // Trigger download
+                      document.body.removeChild(link); // Clean up
+                    }}
+                  >
+                    CV
+                  </p>
+                  <div className="border-t border-gray-600"></div> {/* Separator */}
+                  <p
+                    className="cursor-pointer hover:bg-gray-700 rounded transition-colors p-2"
+                    onClick={() => {
+                      const applicationFileUrl = "/src/assets/Application.pdf"; // Path to your application file
+                      const link = document.createElement("a");
+                      link.href = applicationFileUrl;
+                      link.download = "Application.pdf"; // Suggested file name
+                      document.body.appendChild(link);
+                      link.click(); // Trigger download
+                      document.body.removeChild(link); // Clean up
+                    }}
+                  >
+                    Application
+                  </p>
+                </div>
+              )}
 
             </li>
           ))}
@@ -144,17 +142,15 @@ const Navbar = ({ nyanStateToParent }) => {
           />
 
           <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            className={`${!toggle ? "hidden" : "flex"
+              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
-                  }`}
+                  className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
+                    }`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);

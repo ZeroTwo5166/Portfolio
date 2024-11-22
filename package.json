@@ -1,12 +1,12 @@
 {
-  "homepage": "https://ZeroTwo5166.github.io/react_vite_threejs_portfolio",
+  "homepage": "https://dryorc.com",
   "name": "react_portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "start": "vite",
     "build": "vite build",

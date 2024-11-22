@@ -50,7 +50,7 @@ const About = () => {
       className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
     >
       I'm a student software developer with experience in C# and
-      JavaScript, and expertise in frameworks like React, Express.js, and
+      JavaScript, and expertise in frameworks like React, Next.js, Angular , and
       Three.js. I'm a quick learner and look forward to new challenges and
       opportunities. I have some experince in cyber security as I have done
       couple of courses on it.

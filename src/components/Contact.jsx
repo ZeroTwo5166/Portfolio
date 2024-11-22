@@ -26,15 +26,15 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     if(form.email.length > 0){
-      emailjs.send('service_7wqt648',
-     'template_2gn9dxr', {
+      emailjs.send('service_x4pewab',
+     'template_i6zqlje', {
       from_name: form.name,
       to_name: 'Subarna Gurung',
       from_email: form.email,
       to_email: 'subarna.gurung7@gmail.com',
       message: form.message,
      },
-     'lwRc66jKAgVRIFst3'
+     'H7SZ-TJ_qM-0jfff6'
      )
      .then(()=> {
       setLoading(false);

@@ -19,11 +19,12 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 import angular from "./tech/angular.png";
 import mssql from "./tech/mssql.png";
 import cSharp from "./tech/cSharp.png";
 import kali from "./tech/kali.png";
+import dcord from "./dcord.JPG"
 
 import tec from "./company/tec.png"
 
@@ -60,5 +61,6 @@ export {
   angular,
   mssql,
   cSharp,
-  kali
+  kali,
+  dcord
 };
