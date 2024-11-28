@@ -76,7 +76,7 @@ const Navbar = ({ nyanStateToParent }) => {
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((nav) => (
+        {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${active === nav.title ? "text-white" : "text-secondary"
@@ -100,13 +100,8 @@ const Navbar = ({ nyanStateToParent }) => {
                   <p
                     className="cursor-pointer hover:bg-gray-700 rounded transition-colors p-2"
                     onClick={() => {
-                      const cvFileUrl = "/src/assets/CV English.pdf"; // Path to your CV file
-                      const link = document.createElement("a");
-                      link.href = cvFileUrl;
-                      link.download = "CV_English.pdf"; // Suggested file name
-                      document.body.appendChild(link);
-                      link.click(); // Trigger download
-                      document.body.removeChild(link); // Clean up
+                      const cvFileUrl = "https://drive.google.com/file/d/1IhsoWRDqrMCzSFVfb-rRwkTClGgDHHpi/view?usp=drive_link"; // Path to your CV file
+                      window.open(cvFileUrl, "_blank"); // Open CV in a new tab
                     }}
                   >
                     CV
@@ -115,20 +110,14 @@ const Navbar = ({ nyanStateToParent }) => {
                   <p
                     className="cursor-pointer hover:bg-gray-700 rounded transition-colors p-2"
                     onClick={() => {
-                      const applicationFileUrl = "/src/assets/Application.pdf"; // Path to your application file
-                      const link = document.createElement("a");
-                      link.href = applicationFileUrl;
-                      link.download = "Application.pdf"; // Suggested file name
-                      document.body.appendChild(link);
-                      link.click(); // Trigger download
-                      document.body.removeChild(link); // Clean up
+                      const applicationFileUrl = "https://drive.google.com/file/d/1-4CL8QjL5DyMKsj8GJM9vEASvKlyzPVM/view?usp=drive_link"; // Path to your application file
+                      window.open(applicationFileUrl, "_blank"); // Open Application in a new tab
                     }}
                   >
                     Application
                   </p>
                 </div>
               )}
-
             </li>
           ))}
         </ul>
